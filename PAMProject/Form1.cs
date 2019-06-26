@@ -18,6 +18,7 @@ namespace PAMProject
         Bitmap contrastTemp;
         bool isFilter, isContrast;
         Bitmap brightnessTemp;
+        int blurAmount = 1;
 
         public Form1()
         {
@@ -34,6 +35,9 @@ namespace PAMProject
                 grnscrBtn.Enabled = false;
                 trcThreshold.Enabled = false;
                 trcBrightness.Enabled = false;
+                blurBtn.Enabled = false;
+                blurtrackBar.Enabled = false;
+                aquaBtn.Enabled = false;
             }
         }
 
@@ -57,6 +61,9 @@ namespace PAMProject
             grnscrBtn.Enabled = true;
             trcThreshold.Enabled = true;
             trcBrightness.Enabled = true;
+            blurBtn.Enabled = true;
+            blurtrackBar.Enabled = true;
+            aquaBtn.Enabled = true;
 
             isFilter = false;
             isContrast = false;
@@ -83,6 +90,9 @@ namespace PAMProject
                 grnscrBtn.Enabled = false;
                 trcThreshold.Enabled = false;
                 trcBrightness.Enabled = false;
+                blurBtn.Enabled = false;
+                blurtrackBar.Enabled = false;
+                aquaBtn.Enabled = false;
 
             }
         }
@@ -335,6 +345,110 @@ namespace PAMProject
             lblBrightnessValue.Text = trcBrightness.Value.ToString();
 
             AdjustBrightness(new Bitmap(imgBox.Image), trcBrightness.Value);
+        }
+
+        private void blurBtn_Click(object sender, EventArgs e)
+        {
+            Bitmap bmp = new Bitmap(imgBox.Image);
+            int width = bmp.Width;
+            int height = bmp.Height;
+
+
+            for (int x = blurAmount; x <= width - blurAmount; x++)
+            {
+                for (int y = blurAmount; y <= height - blurAmount; y++)
+                {
+                    try
+                    {
+                        Color prevX = bmp.GetPixel(x - blurAmount, y);
+                        Color nextX = bmp.GetPixel(x + blurAmount, y);
+                        Color prevY = bmp.GetPixel(x, y - blurAmount);
+                        Color nextY = bmp.GetPixel(x, y + blurAmount);
+
+                        int avgR = (int)((prevX.R + nextX.R + prevY.R + nextY.R) / 4);
+                        int avgG = (int)((prevX.G + nextX.G + prevY.G + nextY.G) / 4);
+                        int avgB = (int)((prevX.B + nextX.B + prevY.B + nextY.B) / 4);
+
+                        bmp.SetPixel(x, y, Color.FromArgb(avgR, avgG, avgB));
+                    }
+                    catch { }
+                }
+            }
+
+            imgBox.Image = bmp;
+            isFilter = true;
+            contrastTemp = new Bitmap(imgBox.Image);
+        }
+
+        private void blurtrackBar_Scroll(object sender, EventArgs e)
+        {
+            blurAmount = int.Parse(blurtrackBar.Value.ToString());
+        }
+
+        private void aquaBtn_Click(object sender, EventArgs e)
+        {
+            Bitmap bmp = new Bitmap(imgBox.Image);
+            int width = bmp.Width;
+            int height = bmp.Height;
+            Bitmap blued = new Bitmap(bmp);
+
+            for (int y = 0; y < height; y++)
+            {
+                for (int x = 0; x < width; x++)
+                {
+                    Color p = bmp.GetPixel(x, y);
+
+                    int a = p.A;
+                    int r = p.R;
+                    int g = p.G;
+                    int b = p.B;
+
+                    blued.SetPixel(x, y, Color.FromArgb(a, 0, 0, b));
+                }
+            }
+
+            imgBox.Image = blued;
+            isFilter = true;
+            contrastTemp = new Bitmap(imgBox.Image);
+
+        }
+
+        private void swirlBtn_Click(object sender, EventArgs e)
+        {
+            Bitmap bmp = new Bitmap(imgBox.Image);
+            int width = bmp.Width;
+            int height = bmp.Height;
+
+            float swirlX = 0.5F, swirlY = 0.4F, swirlRadius = 0.5F, swirlTwists = 0.5F;
+
+            for (int y = 0; y < height; y++)
+            {
+                for (int x = 0; x < width; x++)
+                {
+                    // compute the distance and angle from the swirl center:
+                    float pixelX = (float)x - swirlX;
+                    float pixelY = (float)y - swirlY;
+                    float pixelDistance = (float)Math.Sqrt((pixelX * pixelX) + (pixelY * pixelY));
+                    float pixelAngle = (float)Math.Atan2(pixelY, pixelX);
+
+                    // work out how much of a swirl to apply (1.0 in the center fading out to 0.0 at the radius):
+                    float swirlAmount = 1.0f - (pixelDistance / swirlRadius);
+                    if (swirlAmount > 0.0f)
+                    {
+                        float twistAngle = (float)(swirlTwists * swirlAmount * Math.PI * 2.0);
+
+                        // adjust the pixel angle and compute the adjusted pixel co-ordinates:
+                        pixelAngle += twistAngle;
+                        pixelX = (float)Math.Cos(pixelAngle) * pixelDistance;
+                        pixelY = (float)Math.Sin(pixelAngle) * pixelDistance;
+                    }
+                    // read and write the pixel
+                    bmp.SetPixel(x, y, bmp.GetPixel((int)(swirlX + pixelX), (int)(swirlY + pixelY)));
+                }
+            }
+            imgBox.Image = bmp;
+            isFilter = true;
+            contrastTemp = new Bitmap(imgBox.Image);
         }
 
         public void AdjustBrightness(Bitmap image, int value)
