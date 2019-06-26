@@ -44,17 +44,22 @@
             this.trcBrightness = new System.Windows.Forms.TrackBar();
             this.label2 = new System.Windows.Forms.Label();
             this.lblBrightnessValue = new System.Windows.Forms.Label();
+            this.blurBtn = new System.Windows.Forms.Button();
+            this.blurtrackBar = new System.Windows.Forms.TrackBar();
+            this.aquaBtn = new System.Windows.Forms.Button();
+            this.swirlBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.imgBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trcThreshold)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trcBrightness)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.blurtrackBar)).BeginInit();
             this.SuspendLayout();
             // 
             // AddImg
             // 
-            this.AddImg.Location = new System.Drawing.Point(9, 10);
-            this.AddImg.Margin = new System.Windows.Forms.Padding(2);
+            this.AddImg.Location = new System.Drawing.Point(12, 12);
+            this.AddImg.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AddImg.Name = "AddImg";
-            this.AddImg.Size = new System.Drawing.Size(83, 27);
+            this.AddImg.Size = new System.Drawing.Size(111, 33);
             this.AddImg.TabIndex = 0;
             this.AddImg.Text = "Add image";
             this.AddImg.UseVisualStyleBackColor = true;
@@ -62,19 +67,19 @@
             // 
             // imgBox
             // 
-            this.imgBox.Location = new System.Drawing.Point(97, 10);
-            this.imgBox.Margin = new System.Windows.Forms.Padding(2);
+            this.imgBox.Location = new System.Drawing.Point(129, 12);
+            this.imgBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.imgBox.Name = "imgBox";
-            this.imgBox.Size = new System.Drawing.Size(767, 455);
+            this.imgBox.Size = new System.Drawing.Size(1023, 560);
             this.imgBox.TabIndex = 1;
             this.imgBox.TabStop = false;
             // 
             // delImg
             // 
-            this.delImg.Location = new System.Drawing.Point(9, 49);
-            this.delImg.Margin = new System.Windows.Forms.Padding(2);
+            this.delImg.Location = new System.Drawing.Point(12, 60);
+            this.delImg.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.delImg.Name = "delImg";
-            this.delImg.Size = new System.Drawing.Size(83, 28);
+            this.delImg.Size = new System.Drawing.Size(111, 34);
             this.delImg.TabIndex = 2;
             this.delImg.Text = "Delete image";
             this.delImg.UseVisualStyleBackColor = true;
@@ -82,10 +87,10 @@
             // 
             // sepiaBtn
             // 
-            this.sepiaBtn.Location = new System.Drawing.Point(9, 475);
-            this.sepiaBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.sepiaBtn.Location = new System.Drawing.Point(27, 586);
+            this.sepiaBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sepiaBtn.Name = "sepiaBtn";
-            this.sepiaBtn.Size = new System.Drawing.Size(80, 27);
+            this.sepiaBtn.Size = new System.Drawing.Size(107, 33);
             this.sepiaBtn.TabIndex = 3;
             this.sepiaBtn.Text = "Sepia";
             this.sepiaBtn.UseVisualStyleBackColor = true;
@@ -93,10 +98,10 @@
             // 
             // saveImg
             // 
-            this.saveImg.Location = new System.Drawing.Point(9, 90);
-            this.saveImg.Margin = new System.Windows.Forms.Padding(2);
+            this.saveImg.Location = new System.Drawing.Point(12, 111);
+            this.saveImg.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.saveImg.Name = "saveImg";
-            this.saveImg.Size = new System.Drawing.Size(83, 27);
+            this.saveImg.Size = new System.Drawing.Size(111, 33);
             this.saveImg.TabIndex = 4;
             this.saveImg.Text = "Save image";
             this.saveImg.UseVisualStyleBackColor = true;
@@ -104,10 +109,10 @@
             // 
             // bwBtn
             // 
-            this.bwBtn.Location = new System.Drawing.Point(93, 475);
-            this.bwBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.bwBtn.Location = new System.Drawing.Point(140, 586);
+            this.bwBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bwBtn.Name = "bwBtn";
-            this.bwBtn.Size = new System.Drawing.Size(80, 27);
+            this.bwBtn.Size = new System.Drawing.Size(107, 33);
             this.bwBtn.TabIndex = 5;
             this.bwBtn.Text = "Black\'n\'White";
             this.bwBtn.UseVisualStyleBackColor = true;
@@ -115,10 +120,10 @@
             // 
             // negBtn
             // 
-            this.negBtn.Location = new System.Drawing.Point(177, 476);
-            this.negBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.negBtn.Location = new System.Drawing.Point(253, 586);
+            this.negBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.negBtn.Name = "negBtn";
-            this.negBtn.Size = new System.Drawing.Size(82, 26);
+            this.negBtn.Size = new System.Drawing.Size(109, 32);
             this.negBtn.TabIndex = 6;
             this.negBtn.Text = "Negative";
             this.negBtn.UseVisualStyleBackColor = true;
@@ -126,10 +131,10 @@
             // 
             // delfilterBtn
             // 
-            this.delfilterBtn.Location = new System.Drawing.Point(9, 437);
-            this.delfilterBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.delfilterBtn.Location = new System.Drawing.Point(12, 538);
+            this.delfilterBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.delfilterBtn.Name = "delfilterBtn";
-            this.delfilterBtn.Size = new System.Drawing.Size(80, 28);
+            this.delfilterBtn.Size = new System.Drawing.Size(107, 34);
             this.delfilterBtn.TabIndex = 7;
             this.delfilterBtn.Text = "No filter";
             this.delfilterBtn.UseVisualStyleBackColor = true;
@@ -137,10 +142,10 @@
             // 
             // grnscrBtn
             // 
-            this.grnscrBtn.Location = new System.Drawing.Point(263, 474);
-            this.grnscrBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.grnscrBtn.Location = new System.Drawing.Point(368, 586);
+            this.grnscrBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grnscrBtn.Name = "grnscrBtn";
-            this.grnscrBtn.Size = new System.Drawing.Size(88, 27);
+            this.grnscrBtn.Size = new System.Drawing.Size(117, 32);
             this.grnscrBtn.TabIndex = 8;
             this.grnscrBtn.Text = "ChromaKey\'d";
             this.grnscrBtn.UseVisualStyleBackColor = true;
@@ -150,11 +155,12 @@
             // 
             this.trcThreshold.AutoSize = false;
             this.trcThreshold.BackColor = System.Drawing.Color.LightGray;
-            this.trcThreshold.Location = new System.Drawing.Point(12, 524);
+            this.trcThreshold.Location = new System.Drawing.Point(16, 645);
+            this.trcThreshold.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.trcThreshold.Maximum = 100;
             this.trcThreshold.Minimum = -100;
             this.trcThreshold.Name = "trcThreshold";
-            this.trcThreshold.Size = new System.Drawing.Size(314, 23);
+            this.trcThreshold.Size = new System.Drawing.Size(419, 28);
             this.trcThreshold.TabIndex = 24;
             this.trcThreshold.TickStyle = System.Windows.Forms.TickStyle.None;
             this.trcThreshold.ValueChanged += new System.EventHandler(this.TrcThreshold_ValueChanged);
@@ -162,18 +168,20 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 508);
+            this.label1.Location = new System.Drawing.Point(16, 625);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 13);
+            this.label1.Size = new System.Drawing.Size(61, 17);
             this.label1.TabIndex = 25;
             this.label1.Text = "Contrast";
             // 
             // lblContrastValue
             // 
             this.lblContrastValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContrastValue.Location = new System.Drawing.Point(332, 520);
+            this.lblContrastValue.Location = new System.Drawing.Point(443, 640);
+            this.lblContrastValue.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblContrastValue.Name = "lblContrastValue";
-            this.lblContrastValue.Size = new System.Drawing.Size(57, 30);
+            this.lblContrastValue.Size = new System.Drawing.Size(76, 37);
             this.lblContrastValue.TabIndex = 26;
             this.lblContrastValue.Text = "0";
             this.lblContrastValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -182,11 +190,12 @@
             // 
             this.trcBrightness.AutoSize = false;
             this.trcBrightness.BackColor = System.Drawing.Color.LightGray;
-            this.trcBrightness.Location = new System.Drawing.Point(395, 524);
+            this.trcBrightness.Location = new System.Drawing.Point(527, 645);
+            this.trcBrightness.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.trcBrightness.Maximum = 100;
             this.trcBrightness.Minimum = -100;
             this.trcBrightness.Name = "trcBrightness";
-            this.trcBrightness.Size = new System.Drawing.Size(314, 23);
+            this.trcBrightness.Size = new System.Drawing.Size(419, 28);
             this.trcBrightness.TabIndex = 27;
             this.trcBrightness.TickStyle = System.Windows.Forms.TickStyle.None;
             this.trcBrightness.ValueChanged += new System.EventHandler(this.trcBrightness_valueCHanged);
@@ -194,27 +203,71 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(395, 508);
+            this.label2.Location = new System.Drawing.Point(527, 625);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 13);
+            this.label2.Size = new System.Drawing.Size(75, 17);
             this.label2.TabIndex = 28;
             this.label2.Text = "Brightness";
             // 
             // lblBrightnessValue
             // 
             this.lblBrightnessValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBrightnessValue.Location = new System.Drawing.Point(715, 517);
+            this.lblBrightnessValue.Location = new System.Drawing.Point(953, 636);
+            this.lblBrightnessValue.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBrightnessValue.Name = "lblBrightnessValue";
-            this.lblBrightnessValue.Size = new System.Drawing.Size(57, 30);
+            this.lblBrightnessValue.Size = new System.Drawing.Size(76, 37);
             this.lblBrightnessValue.TabIndex = 29;
             this.lblBrightnessValue.Text = "0";
             this.lblBrightnessValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // blurBtn
+            // 
+            this.blurBtn.Location = new System.Drawing.Point(491, 586);
+            this.blurBtn.Name = "blurBtn";
+            this.blurBtn.Size = new System.Drawing.Size(111, 32);
+            this.blurBtn.TabIndex = 30;
+            this.blurBtn.Text = "Blur";
+            this.blurBtn.UseVisualStyleBackColor = true;
+            this.blurBtn.Click += new System.EventHandler(this.blurBtn_Click);
+            // 
+            // blurtrackBar
+            // 
+            this.blurtrackBar.Location = new System.Drawing.Point(608, 586);
+            this.blurtrackBar.Name = "blurtrackBar";
+            this.blurtrackBar.Size = new System.Drawing.Size(116, 56);
+            this.blurtrackBar.TabIndex = 31;
+            this.blurtrackBar.Scroll += new System.EventHandler(this.blurtrackBar_Scroll);
+            // 
+            // aquaBtn
+            // 
+            this.aquaBtn.Location = new System.Drawing.Point(730, 586);
+            this.aquaBtn.Name = "aquaBtn";
+            this.aquaBtn.Size = new System.Drawing.Size(118, 32);
+            this.aquaBtn.TabIndex = 32;
+            this.aquaBtn.Text = "Aquatic";
+            this.aquaBtn.UseVisualStyleBackColor = true;
+            this.aquaBtn.Click += new System.EventHandler(this.aquaBtn_Click);
+            // 
+            // swirlBtn
+            // 
+            this.swirlBtn.Location = new System.Drawing.Point(854, 586);
+            this.swirlBtn.Name = "swirlBtn";
+            this.swirlBtn.Size = new System.Drawing.Size(115, 32);
+            this.swirlBtn.TabIndex = 33;
+            this.swirlBtn.Text = "Swirl it!";
+            this.swirlBtn.UseVisualStyleBackColor = true;
+            this.swirlBtn.Click += new System.EventHandler(this.swirlBtn_Click);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(873, 559);
+            this.ClientSize = new System.Drawing.Size(1164, 688);
+            this.Controls.Add(this.swirlBtn);
+            this.Controls.Add(this.aquaBtn);
+            this.Controls.Add(this.blurtrackBar);
+            this.Controls.Add(this.blurBtn);
             this.Controls.Add(this.lblBrightnessValue);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.trcBrightness);
@@ -231,12 +284,13 @@
             this.Controls.Add(this.imgBox);
             this.Controls.Add(this.AddImg);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "FilterMaker";
             ((System.ComponentModel.ISupportInitialize)(this.imgBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trcThreshold)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trcBrightness)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.blurtrackBar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -259,6 +313,10 @@
         private System.Windows.Forms.TrackBar trcBrightness;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblBrightnessValue;
+        private System.Windows.Forms.Button blurBtn;
+        private System.Windows.Forms.TrackBar blurtrackBar;
+        private System.Windows.Forms.Button aquaBtn;
+        private System.Windows.Forms.Button swirlBtn;
     }
 }
 

@@ -28,3 +28,13 @@ C:\Users\annci\Desktop\Nowy folder (3)\Studia\PAMProject\PAMProject\obj\Debug\PA
 C:\Users\annci\Desktop\Nowy folder (3)\Studia\PAMProject\PAMProject\obj\Debug\PAMProject.csproj.CoreCompileInputs.cache
 C:\Users\annci\Desktop\Nowy folder (3)\Studia\PAMProject\PAMProject\obj\Debug\PAMProject.exe
 C:\Users\annci\Desktop\Nowy folder (3)\Studia\PAMProject\PAMProject\obj\Debug\PAMProject.pdb
+D:\GitHub\FilterApp\PAMProject\bin\Debug\PAMProject.exe.config
+D:\GitHub\FilterApp\PAMProject\bin\Debug\PAMProject.exe
+D:\GitHub\FilterApp\PAMProject\bin\Debug\PAMProject.pdb
+D:\GitHub\FilterApp\PAMProject\obj\Debug\PAMProject.csprojAssemblyReference.cache
+D:\GitHub\FilterApp\PAMProject\obj\Debug\PAMProject.Form1.resources
+D:\GitHub\FilterApp\PAMProject\obj\Debug\PAMProject.Properties.Resources.resources
+D:\GitHub\FilterApp\PAMProject\obj\Debug\PAMProject.csproj.GenerateResource.cache
+D:\GitHub\FilterApp\PAMProject\obj\Debug\PAMProject.csproj.CoreCompileInputs.cache
+D:\GitHub\FilterApp\PAMProject\obj\Debug\PAMProject.exe
+D:\GitHub\FilterApp\PAMProject\obj\Debug\PAMProject.pdb
