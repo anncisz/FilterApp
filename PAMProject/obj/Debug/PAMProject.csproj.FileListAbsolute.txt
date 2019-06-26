@@ -1,0 +1,30 @@
+D:\GitHub\GiM\PAMProject\PAMProject\bin\Debug\PAMProject.exe.config
+D:\GitHub\GiM\PAMProject\PAMProject\bin\Debug\PAMProject.exe
+D:\GitHub\GiM\PAMProject\PAMProject\bin\Debug\PAMProject.pdb
+D:\GitHub\GiM\PAMProject\PAMProject\obj\Debug\PAMProject.csprojAssemblyReference.cache
+D:\GitHub\GiM\PAMProject\PAMProject\obj\Debug\PAMProject.Form1.resources
+D:\GitHub\GiM\PAMProject\PAMProject\obj\Debug\PAMProject.Properties.Resources.resources
+D:\GitHub\GiM\PAMProject\PAMProject\obj\Debug\PAMProject.csproj.GenerateResource.cache
+D:\GitHub\GiM\PAMProject\PAMProject\obj\Debug\PAMProject.csproj.CoreCompileInputs.cache
+D:\GitHub\GiM\PAMProject\PAMProject\obj\Debug\PAMProject.exe
+D:\GitHub\GiM\PAMProject\PAMProject\obj\Debug\PAMProject.pdb
+D:\GitHub\Studia\PAMProject\PAMProject\bin\Debug\PAMProject.exe.config
+D:\GitHub\Studia\PAMProject\PAMProject\bin\Debug\PAMProject.exe
+D:\GitHub\Studia\PAMProject\PAMProject\bin\Debug\PAMProject.pdb
+D:\GitHub\Studia\PAMProject\PAMProject\obj\Debug\PAMProject.csprojAssemblyReference.cache
+D:\GitHub\Studia\PAMProject\PAMProject\obj\Debug\PAMProject.Form1.resources
+D:\GitHub\Studia\PAMProject\PAMProject\obj\Debug\PAMProject.Properties.Resources.resources
+D:\GitHub\Studia\PAMProject\PAMProject\obj\Debug\PAMProject.csproj.GenerateResource.cache
+D:\GitHub\Studia\PAMProject\PAMProject\obj\Debug\PAMProject.csproj.CoreCompileInputs.cache
+D:\GitHub\Studia\PAMProject\PAMProject\obj\Debug\PAMProject.exe
+D:\GitHub\Studia\PAMProject\PAMProject\obj\Debug\PAMProject.pdb
+C:\Users\annci\Desktop\Nowy folder (3)\Studia\PAMProject\PAMProject\bin\Debug\PAMProject.exe.config
+C:\Users\annci\Desktop\Nowy folder (3)\Studia\PAMProject\PAMProject\bin\Debug\PAMProject.exe
+C:\Users\annci\Desktop\Nowy folder (3)\Studia\PAMProject\PAMProject\bin\Debug\PAMProject.pdb
+C:\Users\annci\Desktop\Nowy folder (3)\Studia\PAMProject\PAMProject\obj\Debug\PAMProject.csprojAssemblyReference.cache
+C:\Users\annci\Desktop\Nowy folder (3)\Studia\PAMProject\PAMProject\obj\Debug\PAMProject.Form1.resources
+C:\Users\annci\Desktop\Nowy folder (3)\Studia\PAMProject\PAMProject\obj\Debug\PAMProject.Properties.Resources.resources
+C:\Users\annci\Desktop\Nowy folder (3)\Studia\PAMProject\PAMProject\obj\Debug\PAMProject.csproj.GenerateResource.cache
+C:\Users\annci\Desktop\Nowy folder (3)\Studia\PAMProject\PAMProject\obj\Debug\PAMProject.csproj.CoreCompileInputs.cache
+C:\Users\annci\Desktop\Nowy folder (3)\Studia\PAMProject\PAMProject\obj\Debug\PAMProject.exe
+C:\Users\annci\Desktop\Nowy folder (3)\Studia\PAMProject\PAMProject\obj\Debug\PAMProject.pdb
